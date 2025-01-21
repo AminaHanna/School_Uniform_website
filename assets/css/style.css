@@ -437,7 +437,7 @@ Top Header CSS
 .header-top-menu {
   text-align: right;
   padding-left: 0;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   list-style-type: none;
 }
 .header-top-menu li {
@@ -2231,10 +2231,10 @@ Products CSS
 .single-products-box .products-content .add-to-cart:hover {
   color: #f53f85;
 }
-.single-products-box:hover .products-content .price {
+/* .single-products-box:hover .products-content .price {
   opacity: 0;
   visibility: hidden;
-}
+} */
 .single-products-box:hover .products-content .add-to-cart {
   transform: translateX(0);
   opacity: 1;
@@ -8619,3 +8619,21 @@ Go Top CSS
 .go-top:hover i {
   margin-top: -3px;
 }/*# sourceMappingURL=style.css.map */
+
+
+/* ------------- */
+.boldtext {
+  font-weight: 600;
+}
+
+.content_li {
+  padding: 5px;
+}
+
+/* .social-link-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+} */
+/* ------------- */
