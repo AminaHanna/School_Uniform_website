@@ -303,7 +303,7 @@ Top Header CSS
   position: relative;
 }
 .header-contact-info li a:hover {
-  color: #50344c;
+  color: #000000;
 }
 .header-contact-info li a::before {
   content: "";
@@ -470,7 +470,7 @@ Top Header CSS
   position: relative;
 }
 .header-top-menu li a:hover {
-  color: #50344c;
+  color: #000000;
 }
 .header-top-menu li a::before {
   content: "";
