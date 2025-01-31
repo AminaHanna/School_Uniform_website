@@ -8673,7 +8673,7 @@ Go Top CSS
 /* WhatsApp Button */
 .whatsapp-btn {
   background-color: #25D366; /* WhatsApp green */
-  bottom: 10px; /* Distance from the bottom of the page */
+  bottom: 40px; /* Distance from the bottom of the page */
   right: 10px; /* Distance from the right side */
 }
 
