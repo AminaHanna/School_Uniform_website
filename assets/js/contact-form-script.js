@@ -24,19 +24,100 @@
         var message = $("#message").val();
 
 
+        // $.ajax({
+        //     type: "POST",
+        //     // url: "assets/php/form-process.php",
+        //     url: "https://formsubmit.co/ajax/hanna.ecraftz@gmail.com",
+        //     data: "name=" + name + "&email=" + email + "&phone_number=" + phone_number + "&message=" + message,
+        //     success : function(statustxt){
+        //         if (statustxt == "success"){
+        //             formSuccess();
+        //         } else {
+        //             formError();
+        //             submitMSG(false,statustxt);
+        //         }
+        //     }
+        // });
+
+        // $.ajax({
+        //     type: "POST",
+        //     url: "https://formsubmit.co/ajax/hanna.ecraftz@gmail.com",
+        //     data: {
+        //         name: name,
+        //         email: email,
+        //         phone_number: phone_number,
+        //         message: message
+        //     },
+        //     dataType: "json",  // Expect JSON response
+        //     success: function(response) {
+        //         if (response.success) {
+        //             formSuccess();
+        //         } else {
+        //             formError();
+        //             submitMSG(false, response.message);
+        //         }
+        //     },
+        //     error: function(xhr, status, error) {
+        //         formError();
+        //         submitMSG(false, "There was an error submitting the form.");
+        //     }
+        // });
+
+        // $.ajax({
+        //     type: "POST",
+        //     url: "https://formsubmit.co/ajax/hanna.ecraftz@gmail.com",
+        //     contentType: "application/json",  // Ensure JSON format
+        //     data: JSON.stringify({
+        //         name: $("#name").val(),
+        //         email: $("#email").val(),
+        //         phone_number: $("#phone_number").val(),
+        //         message: $("#message").val(),
+        //         _template: "table"  // Use FormSubmit's table format
+        //     }),
+        //     dataType: "json",
+        //     success: function(response) {
+        //         if (response.success) {
+        //             formSuccess();
+        //         } else {
+        //             formError();
+        //             submitMSG(false, response.message);
+        //         }
+        //     },
+        //     error: function(xhr, status, error) {
+        //         formError();
+        //         submitMSG(false, "There was an error submitting the form.");
+        //     }
+        // });
+
         $.ajax({
             type: "POST",
-            url: "assets/php/form-process.php",
-            data: "name=" + name + "&email=" + email + "&phone_number=" + phone_number + "&message=" + message,
-            success : function(statustxt){
-                if (statustxt == "success"){
+            url: "https://formsubmit.co/ajax/hanna.ecraftz@gmail.com",
+            contentType: "application/json",  // Ensure JSON format
+            data: JSON.stringify({
+                name: $("#name").val(),
+                email: $("#email").val(),  // User's email
+                phone_number: $("#phone_number").val(),
+                message: $("#message").val(),
+                _replyto: $("#email").val(),  // Set user email for replies
+                _fromname: "Hanna's Website",  // Custom sender name
+                _template: "table"  // Formats email properly
+            }),
+            dataType: "json",
+            success: function(response) {
+                if (response.success) {
                     formSuccess();
                 } else {
                     formError();
-                    submitMSG(false,statustxt);
+                    submitMSG(false, response.message);
                 }
+            },
+            error: function(xhr, status, error) {
+                formError();
+                submitMSG(false, "There was an error submitting the form.");
             }
         });
+        
+        
     }
 
     function formSuccess(){
