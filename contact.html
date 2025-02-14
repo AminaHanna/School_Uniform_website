@@ -297,9 +297,9 @@
                     <div class="col-lg-7 col-md-12">
                         <div class="contact-form">
                             <h3>Drop Us A Line</h3>
-                            <p>Whether you are new to the industry or planning to give a quick makeover to your brand, if you think we could collaborate on an upcoming project of yours, Contact us, and we will get back to you at the earliest!</p>
-
-                            <form id="contactForm" action="https://formsubmit.co/hanna.ecraftz@gmail.com" method="POST">
+                            <p>We’d love to hear from you! Whether you have inquiries about our products, need a manufacturing partner, or want to collaborate, feel free to reach out.</p>
+                            
+                            <!-- <form id="contactForm" action="https://formsubmit.co/hanna.ecraftz@gmail.com" method="POST">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-12 col-md-6">
                                         <div class="form-group">
@@ -337,6 +337,48 @@
                                         <button type="submit" class="default-btn">Send Message</button>
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                         <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form> -->
+
+                            <form id="contactForm" action="https://formsubmit.co/hanna.ecraftz@gmail.com" method="POST">
+        
+                                <!-- Honeypot Field to Reduce Spam -->
+                                <input type="text" name="_honey" style="display:none;">
+                            
+                               
+                            
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>Name <span>*</span></label>
+                                            <input type="text" name="name" id="name" class="form-control" required="" placeholder="Your name">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>Email <span>*</span></label>
+                                            <input type="email" name="email" id="email" class="form-control" required="" placeholder="Your email address">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label>Phone Number <span>*</span></label>
+                                            <input type="text" name="phone_number" id="phone_number" class="form-control" required="" placeholder="Your phone number">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label>Your Message <span>*</span></label>
+                                            <textarea name="message" id="message" cols="30" rows="5" required="" class="form-control" placeholder="Write your message..."></textarea>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-lg-12 col-md-12">
+                                        <button type="submit" class="default-btn">Send Message</button>
                                     </div>
                                 </div>
                             </form>
