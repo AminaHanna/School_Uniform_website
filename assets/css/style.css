@@ -10498,7 +10498,8 @@ Footer CSS
 =================================================*/
 .footer-area {
   padding-top: 100px;
-  background-color: #867883;
+  /* background-color: #867883; */
+  background-color: #000000;
   position: relative;
   z-index: 1;
 }
