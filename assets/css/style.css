@@ -10981,3 +10981,12 @@ Go Top CSS
   width: auto;
   height: 75px;
 }
+
+@media (max-width: 600px)
+{
+  .main-logo {
+    width: auto;
+    height: 60px;
+    margin-top: -14px;
+  }
+}
